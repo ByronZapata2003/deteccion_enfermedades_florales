@@ -1,0 +1,306 @@
+{
+  "dataset": "RoseLeafSet (subconjunto augmented, CC BY 4.0)",
+  "clases": [
+    "mancha_negra",
+    "hoja_seca",
+    "hoja_sana",
+    "perforaciones"
+  ],
+  "etiquetas": {
+    "mancha_negra": "Mancha negra",
+    "hoja_seca": "Hoja seca",
+    "hoja_sana": "Hoja sana",
+    "perforaciones": "Perforaciones foliares"
+  },
+  "n_imagenes": 720,
+  "n_train": 503,
+  "n_validacion": 109,
+  "n_test": 108,
+  "semilla": 42,
+  "validacion": {
+    "nombre": "bosque_color_textura_validacion",
+    "accuracy": 0.8349,
+    "f1_macro": 0.8322,
+    "matriz_confusion": [
+      [
+        18,
+        1,
+        3,
+        6
+      ],
+      [
+        0,
+        27,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        21,
+        4
+      ],
+      [
+        0,
+        0,
+        2,
+        25
+      ]
+    ],
+    "reporte": {
+      "mancha_negra": {
+        "precision": 1.0,
+        "recall": 0.6428571428571429,
+        "f1-score": 0.782608695652174,
+        "support": 28.0
+      },
+      "hoja_seca": {
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1-score": 0.9473684210526315,
+        "support": 27.0
+      },
+      "hoja_sana": {
+        "precision": 0.8076923076923077,
+        "recall": 0.7777777777777778,
+        "f1-score": 0.7924528301886793,
+        "support": 27.0
+      },
+      "perforaciones": {
+        "precision": 0.7142857142857143,
+        "recall": 0.9259259259259259,
+        "f1-score": 0.8064516129032258,
+        "support": 27.0
+      },
+      "accuracy": 0.8348623853211009,
+      "macro avg": {
+        "precision": 0.8554945054945056,
+        "recall": 0.8366402116402116,
+        "f1-score": 0.8322203899491776,
+        "support": 109.0
+      },
+      "weighted avg": {
+        "precision": 0.8568202439762072,
+        "recall": 0.8348623853211009,
+        "f1-score": 0.8317652367904894,
+        "support": 109.0
+      }
+    }
+  },
+  "modelos": [
+    {
+      "nombre": "mayoria",
+      "accuracy": 0.25,
+      "f1_macro": 0.1,
+      "matriz_confusion": [
+        [
+          0,
+          0,
+          27,
+          0
+        ],
+        [
+          0,
+          0,
+          27,
+          0
+        ],
+        [
+          0,
+          0,
+          27,
+          0
+        ],
+        [
+          0,
+          0,
+          27,
+          0
+        ]
+      ],
+      "reporte": {
+        "mancha_negra": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 27.0
+        },
+        "hoja_seca": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 27.0
+        },
+        "hoja_sana": {
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1-score": 0.4,
+          "support": 27.0
+        },
+        "perforaciones": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 27.0
+        },
+        "accuracy": 0.25,
+        "macro avg": {
+          "precision": 0.0625,
+          "recall": 0.25,
+          "f1-score": 0.1,
+          "support": 108.0
+        },
+        "weighted avg": {
+          "precision": 0.0625,
+          "recall": 0.25,
+          "f1-score": 0.1,
+          "support": 108.0
+        }
+      }
+    },
+    {
+      "nombre": "regresion_logistica_color",
+      "accuracy": 0.8241,
+      "f1_macro": 0.8219,
+      "matriz_confusion": [
+        [
+          23,
+          2,
+          0,
+          2
+        ],
+        [
+          1,
+          26,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          19,
+          5
+        ],
+        [
+          2,
+          0,
+          4,
+          21
+        ]
+      ],
+      "reporte": {
+        "mancha_negra": {
+          "precision": 0.8518518518518519,
+          "recall": 0.8518518518518519,
+          "f1-score": 0.8518518518518519,
+          "support": 27.0
+        },
+        "hoja_seca": {
+          "precision": 0.8666666666666667,
+          "recall": 0.9629629629629629,
+          "f1-score": 0.9122807017543859,
+          "support": 27.0
+        },
+        "hoja_sana": {
+          "precision": 0.8260869565217391,
+          "recall": 0.7037037037037037,
+          "f1-score": 0.76,
+          "support": 27.0
+        },
+        "perforaciones": {
+          "precision": 0.75,
+          "recall": 0.7777777777777778,
+          "f1-score": 0.7636363636363637,
+          "support": 27.0
+        },
+        "accuracy": 0.8240740740740741,
+        "macro avg": {
+          "precision": 0.8236513687600644,
+          "recall": 0.8240740740740741,
+          "f1-score": 0.8219422293106504,
+          "support": 108.0
+        },
+        "weighted avg": {
+          "precision": 0.8236513687600644,
+          "recall": 0.8240740740740741,
+          "f1-score": 0.8219422293106504,
+          "support": 108.0
+        }
+      }
+    },
+    {
+      "nombre": "bosque_color_textura",
+      "accuracy": 0.8796,
+      "f1_macro": 0.8736,
+      "matriz_confusion": [
+        [
+          17,
+          4,
+          1,
+          5
+        ],
+        [
+          0,
+          27,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          26,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          25
+        ]
+      ],
+      "reporte": {
+        "mancha_negra": {
+          "precision": 0.8947368421052632,
+          "recall": 0.6296296296296297,
+          "f1-score": 0.7391304347826086,
+          "support": 27.0
+        },
+        "hoja_seca": {
+          "precision": 0.84375,
+          "recall": 1.0,
+          "f1-score": 0.9152542372881356,
+          "support": 27.0
+        },
+        "hoja_sana": {
+          "precision": 0.9629629629629629,
+          "recall": 0.9629629629629629,
+          "f1-score": 0.9629629629629629,
+          "support": 27.0
+        },
+        "perforaciones": {
+          "precision": 0.8333333333333334,
+          "recall": 0.9259259259259259,
+          "f1-score": 0.8771929824561403,
+          "support": 27.0
+        },
+        "accuracy": 0.8796296296296297,
+        "macro avg": {
+          "precision": 0.8836957846003899,
+          "recall": 0.8796296296296297,
+          "f1-score": 0.8736351543724619,
+          "support": 108.0
+        },
+        "weighted avg": {
+          "precision": 0.8836957846003899,
+          "recall": 0.8796296296296297,
+          "f1-score": 0.8736351543724618,
+          "support": 108.0
+        }
+      }
+    }
+  ],
+  "modelo_elegido": "bosque_color_textura",
+  "python": "3.11.18",
+  "sklearn": "1.7.2",
+  "nota": "Las imágenes augmented pueden ser transformaciones de la misma hoja. La partición aleatoria puede ser optimista frente a un cultivo nuevo. No usar como diagnóstico de campo."
+}

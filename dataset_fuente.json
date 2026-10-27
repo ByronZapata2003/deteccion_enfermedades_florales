@@ -1,0 +1,16 @@
+{
+  "nombre": "RoseLeafSet",
+  "cita": "Jinia, J. T., Rahman, M. S., Mojumdar, M. U. y Bijoy, M. H. I. (2025). RoseLeafSet: Real-World Leaf Image Dataset for AI-Based Agricultural Solutions. Mendeley Data.",
+  "doi": "https://doi.org/10.17632/9G668BFHY5.3",
+  "licencia": "CC BY 4.0",
+  "replica": "https://huggingface.co/datasets/Project-AgML/roseleafset_disease_classification",
+  "config_usada": "augmented",
+  "subconjunto": "180 imágenes por clase, un salto de 12 dentro de cada bloque de 2500, redimensionadas a 160 px",
+  "clases": {
+    "0": "Black Spot -> mancha_negra",
+    "1": "Dry Leaf -> hoja_seca",
+    "2": "Healthy Leaf -> hoja_sana",
+    "3": "Leaf Holes -> perforaciones"
+  },
+  "nota": "El parquet completo no se versiona. data/processed ya contiene el subconjunto necesario para entrenar y probar."
+}

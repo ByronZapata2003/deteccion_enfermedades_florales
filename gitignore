@@ -1,0 +1,6 @@
+.env
+__pycache__/
+.ipynb_checkpoints/
+data/diagnosticos.json
+data/raw/*.parquet
+.pytest_cache/
